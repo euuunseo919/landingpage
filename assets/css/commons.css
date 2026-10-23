@@ -101,71 +101,55 @@ body{
     font-weight: 400;
 }
 
-
-
-
-
-
-
-
-
-
-
-.font-size-m{
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.font-size-s{
-    font-size: 26px;
-    font-weight: 400;
-}
-
 .font-size-body{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
+
+
+/* ===== */
+
 
 .font-size-36{
-    font-size: 36px;
+    font-size: 2.25rem;
     font-weight: 500;
 }
 
 .font-size-28{
-    font-size: 28px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
 .font-size-26{
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 400;
 }
 
 .font-size-26-600{
-    font-size: 26px;
+    font-size: 1.625rem;
     font-weight: 600;
 }
 
 .font-size-20{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 40px;
 }
 
 .font-size-20-600{
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 600;
     line-height: 32px;
 }
 
 .font-size-18{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
     line-height: 32px;
 }
 
 .font-size-16{
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     line-height: 16px;
 }

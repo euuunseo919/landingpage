@@ -59,6 +59,30 @@
     background-size: cover;
 }
 
+.hero .container{
+    width: min(1600px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
+.hero-text-content{
+    max-width: 560px;
+    color: #000;
+
+    position: absolute;
+    z-index: 2;
+}
+
+.hero-text-content > p:first-child{
+    margin-bottom: 16px;
+}
+
+.hero-text-content h1{
+    margin: 0 0 16px;
+    font-size: 56px;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
 /* Swiper 배경 */
 .hero .swiper {
     position: absolute;
@@ -78,6 +102,11 @@
     background-size: cover;
 }
 
+.main-swiper-slider{
+    position: absolute;
+    z-index: -1;
+}
+
 /* 각 슬라이드 이미지 */
 .hero .slide-01 {
     background-image: url("../images/hero-bg.jpg" );
@@ -90,48 +119,9 @@
 .hero .slide-03 {
     background-image: url("../images/hero-bg03.jpg");
 } */
-
-
-/* 페이지네이션 */
-.hero .swiper-pagination {
-    bottom: 30px;
-    z-index: 3;
-}
-
-/* .hero .swiper-pagination-bullet {
-    background: #fff;
-    opacity: 0.5;
-}
-
-.hero .swiper-pagination-bullet-active {
-    opacity: 1;
-} */
+ 
 
 /* slide 끝 */
-
-.hero .container{
-    width: min(1600px, calc(100% - 40px));
-    margin: 0 auto;
-}
-
-.hero-text-content{
-    max-width: 560px;
-    color: #000;
-
-    z-index: 10;
-}
-
-.hero-text-content > p:first-child{
-    margin-bottom: 16px;
-}
-
-.hero-text-content h1{
-    margin: 0 0 16px;
-    font-size: 56px;
-    font-weight: 600;
-    line-height: 1.25;
-}
-
 
 
 /* ABOUT SECTION */
@@ -285,25 +275,188 @@
 /* SCENT IN YOUR SPACE */
 
 
-/* OUR PHILOSOPHY */
-.philosophy-text-content{
-    justify-content: center;
-    padding: 30px 0 60px 0;
-    
+
+/* =========================
+   OUR PHILOSOPHY
+========================= */
+
+/* 전체 섹션 */
+.philosophy {
+    width: 100%;
+    padding: 120px 0;
 }
 
-.philosophy-card{
-    justify-content: center;
-    align-items: center;
+/* 컨테이너 */
+.philosophy .container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 32px;
+    box-sizing: border-box;
 }
-.reason-card{
+
+/* 소개 문구 */
+.philosophy-text-content {
+    justify-content: center;
+    text-align: center;
+    padding: 30px 0 60px;
+}
+
+/* 카드 전체 영역 */
+.philosophy-card {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+/* 개별 카드 */
+.reason-card {
+    display: flex;
     flex-direction: column;
-    
 
-    width: 512px;
-    height: 680px;
+    flex: 1;
+    min-width: 0;
 }
 
+/* 카드 이미지 */
+.reason-card img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1.85 / 1;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+/* 카드 텍스트 영역 */
+.card-text {
+    margin: 0 0 60px;
+}
+
+/* 카드 제목 */
+.card-text h3 {
+    margin: 0 0 20px;
+}
+
+/* 카드 부제목 */
+.card-text p:first-of-type {
+    margin: 0 0 50px;
+}
+
+/* 카드 본문 설명 */
+.card-text p:last-of-type {
+    margin: 0;
+}
+
+
+
+/* FAQ SECTION */
+
+.faq {
+  width: 100%;
+  padding: 80px 20px 100px;
+  background-color: #fff;
+}
+
+.faq__inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* FAQ 제목 */
+
+.faq__header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.faq__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.faq__subtitle {
+  font-size: 14px;
+  color: #333;
+}
+
+/* FAQ 목록 */
+
+.faq__list {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* 질문 아이템 */
+
+.faq__item {
+  border-bottom: 1px solid #ddd;
+}
+
+/* 질문 영역 */
+
+.faq__question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 20px 5px;
+  font-size: 15px;
+  font-weight: 400;
+  cursor: pointer;
+
+  list-style: none;
+}
+
+/* 브라우저 기본 화살표 제거 */
+
+.faq__question::-webkit-details-marker {
+  display: none;
+}
+
+/* 질문 앞 Q. 추가 */
+
+.faq__question::before {
+  content: "Q.";
+  margin-right: 5px;
+}
+
+/* 화살표를 오른쪽 끝에 배치 */
+
+.faq__question::after {
+  content: "";
+  width: 0;
+  height: 0;
+
+  margin-left: auto;
+
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 7px solid #000;
+
+  transition: transform 0.3s ease;
+}
+
+/* 열렸을 때 화살표 회전 */
+
+.faq__item[open] .faq__question::after {
+  transform: rotate(180deg);
+}
+
+/* 답변 영역 */
+
+.faq__answer {
+  padding: 20px 25px 25px;
+
+  font-size: 14px;
+  line-height: 1.8;
+  color: #666;
+
+  background-color: #f9f9f9;
+}
 
 
 /* =========================
