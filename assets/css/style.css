@@ -150,8 +150,18 @@
     justify-content: center;
 }
 
+/* ABOUT EROOM */
+.about .section-tit {
+    align-items: flex-start;
+    text-align: left;
+}
+
 .about-title{
     padding-bottom: 120px;
+}
+
+.about-text .section-tit{
+    margin-bottom: 100px;
 }
 
 .about-text-content{
@@ -180,7 +190,7 @@
 /* SIGNATURE SECTION */
 
 .signature .container{
-    margin: 60px 160px;
+    margin: 60px 160px 60px 160px;
 }
 
 .scent-container{
@@ -283,7 +293,7 @@
 /* 전체 섹션 */
 .philosophy {
     width: 100%;
-    padding: 120px 0;
+    padding: 60px 0;
 }
 
 /* 컨테이너 */
@@ -330,7 +340,7 @@
 
 /* 카드 텍스트 영역 */
 .card-text {
-    margin: 0 0 60px;
+    margin: 30px 30px 60px;
 }
 
 /* 카드 제목 */
