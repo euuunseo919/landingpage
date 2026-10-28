@@ -7,50 +7,50 @@
 /* header */
 
 .header {
-  position: absolute;
-  top: 0;
-  left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 
-  width: 100%;
-  height: 100px;
-  padding: 0 20px;
+    width: 100%;
+    height: 100px;
+    padding: 0 20px;
 
-  z-index: 100;
+    z-index: 100;
 }
 
-.nav{
+.nav {
     padding: 24px 20px;
     justify-content: space-between;
 }
 
-.navi{
+.navi {
     gap: 32px;
     font-size: 18px;
     font-weight: 500;
     line-height: 24px;
 }
 
-.navi a{
+.navi a {
     color: #000;
     text-decoration: none;
 }
 
 
 
-.section-tit{
+.section-tit {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 
     gap: 10px;
-    padding: 60px 0;
+    padding: 60px 0 0 0;
 }
 
 
 
 /* hero */
-.hero{
+.hero {
     height: 100vh;
     display: flex;
     align-items: center;
@@ -59,12 +59,12 @@
     background-size: cover;
 }
 
-.hero .container{
+.hero .container {
     width: min(1600px, calc(100% - 40px));
     margin: 0 auto;
 }
 
-.hero-text-content{
+.hero-text-content {
     max-width: 560px;
     color: #000;
 
@@ -72,11 +72,11 @@
     z-index: 2;
 }
 
-.hero-text-content > p:first-child{
+.hero-text-content>p:first-child {
     margin-bottom: 16px;
 }
 
-.hero-text-content h1{
+.hero-text-content h1 {
     margin: 0 0 16px;
     font-size: 56px;
     font-weight: 600;
@@ -102,14 +102,14 @@
     background-size: cover;
 }
 
-.main-swiper-slider{
+.main-swiper-slider {
     position: absolute;
     z-index: -1;
 }
 
 /* 각 슬라이드 이미지 */
 .hero .slide-01 {
-    background-image: url("../images/hero-bg01.jpg" );
+    background-image: url("../images/hero-bg01.jpg");
 }
 
 /* .hero .slide-02 {
@@ -119,18 +119,20 @@
 .hero .slide-03 {
     background-image: url("../images/hero-bg03.jpg");
 } */
- 
+
 
 /* slide 끝 */
 
 
 /* ABOUT SECTION */
-.about .container{
+.about .container {
     width: 100%;
     height: 643px;
 
-    display: flex;          /* 핵심 */
-    align-items: center;    /* 세로 중앙 */
+    display: flex;
+    /* 핵심 */
+    align-items: center;
+    /* 세로 중앙 */
 
     gap: 120px;
 
@@ -139,7 +141,7 @@
     padding: 60px 160px;
 }
 
-.about-text{
+.about-text {
     width: 512px;
     height: 100%;
 
@@ -154,28 +156,28 @@
     text-align: left;
 }
 
-.about-title{
+.about-title {
     padding-bottom: 120px;
 }
 
-.about-text .section-tit{
+.about-text .section-tit {
     margin-bottom: 100px;
 }
 
-.about-text-content{
+.about-text-content {
     display: flex;
     flex-direction: column;
 
-    gap: 60px; 
+    gap: 60px;
 }
 
-.about-image{
+.about-image {
     width: 1056px;
     height: 643px;
     overflow: hidden;
 }
 
-.about-image img{
+.about-image img {
     width: 100%;
     height: 100%;
 
@@ -186,17 +188,17 @@
 
 
 /* SIGNATURE SECTION */
-.signature .container{
+.signature .container {
     margin: 60px 160px 60px 160px;
 }
 
-.scent-container{
+.scent-container {
     justify-content: space-between;
     align-items: center;
 
 }
 
-.product{
+.product {
     flex-direction: column;
     align-items: center;
 
@@ -493,12 +495,12 @@
         line-height: 1.3;
     }
 
-    .hero-text-content > p:first-child {
+    .hero-text-content>p:first-child {
         margin-bottom: 12px;
         font-size: 14px;
     }
 
-    .hero-text-content > p:last-child {
+    .hero-text-content>p:last-child {
         font-size: 16px;
         line-height: 1.6;
     }
@@ -521,11 +523,11 @@
         line-height: 1.3;
     }
 
-    .hero-text-content > p:first-child {
+    .hero-text-content>p:first-child {
         font-size: 12px;
     }
 
-    .hero-text-content > p:last-child {
+    .hero-text-content>p:last-child {
         font-size: 14px;
     }
 
@@ -545,4 +547,3 @@
         font-size: 42px;
     }
 } */
-
